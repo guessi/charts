@@ -10,9 +10,7 @@ $ helm install stable/nats
 
 ## Introduction
 
-This chart bootstraps a [NATS](https://github.com/bitnami/bitnami-docker-nats) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
-
-Bitnami charts can be used with [Kubeapps](https://kubeapps.com/) for deployment and management of Helm Charts in clusters. This chart has been tested to work with NGINX Ingress, cert-manager, fluentd and Prometheus on top of the [BKPR](https://kubeprod.io/).
+This chart bootstraps a [NATS](https://hub.docker.com/_/nats) deployment on a [Kubernetes](http://kubernetes.io) cluster using the [Helm](https://helm.sh) package manager.
 
 ## Prerequisites
 
@@ -50,7 +48,7 @@ The following table lists the configurable parameters of the NATS chart and thei
 | `global.imageRegistry`               | Global Docker image registry                                                                 | `nil`                                                         |
 | `global.imagePullSecrets`            | Global Docker registry secret names as an array                                              | `[]` (does not add image pull secrets to deployed pods)       |
 | `image.registry`                     | NATS image registry                                                                          | `docker.io`                                                   |
-| `image.repository`                   | NATS Image name                                                                              | `bitnami/nats`                                                |
+| `image.repository`                   | NATS Image name                                                                              | `nats`                                                        |
 | `image.tag`                          | NATS Image tag                                                                               | `{TAG_NAME}`                                                  |
 | `image.pullPolicy`                   | Image pull policy                                                                            | `IfNotPresent`                                                |
 | `image.pullSecrets`                  | Specify docker-registry secret names as an array                                             | `[]` (does not add image pull secrets to deployed pods)       |

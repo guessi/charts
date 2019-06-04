@@ -7,13 +7,13 @@
 #   imagePullSecrets:
 #     - myRegistryKeySecretName
 
-## Bitnami NATS image version
-## ref: https://hub.docker.com/r/bitnami/nats/tags/
+## Official NATS image version
+## ref: https://hub.docker.com/_/nats
 ##
 image:
   registry: docker.io
-  repository: bitnami/nats
-  tag: 1.4.1-debian-9-r99
+  repository: nats
+  tag: 1.4.1
   ## Specify a imagePullPolicy
   ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
   ## ref: http://kubernetes.io/docs/user-guide/images/#pre-pulling-images

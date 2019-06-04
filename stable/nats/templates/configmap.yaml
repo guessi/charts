@@ -33,7 +33,7 @@ data:
     logtime: {{ .Values.debug.logtime }}
 
     # Pid file
-    pid_file: "/tmp/gnatsd.pid"
+    # pid_file: "/tmp/gnatsd.pid"
 
     # Some system overides
     {{- if .Values.maxConnections }}
